@@ -297,23 +297,55 @@ footer h6 {
 }
 
 /* login page */
-
-.formcenter{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-} 
 .admin h6{
     font-weight: 700;
+    margin-top: 3rem !important;
 }
   button {
     background-color:#fefefe;
     color: #1e90ff;
-    padding: 14px 20px;
+    padding: 0.5rem;
     margin: 8px 0;
     border-color:  #1e90ff;
     cursor: pointer;
-    width: 80%;
-    border-radius: 50px;
+    width: 30%;
+    border-radius: 50rem;
+}
+  input{
+      padding: 0.5rem;
+      margin: -7px;
+      width: 20rem !important; 
   }
+  .inp-icon{
+    background: url(https://img.icons8.com/windows/32/000000/lock.png)no-repeat scroll 18px 7px;
+    background-size: 16px;
+    padding-left: 60px;
+    box-shadow: none;
+  }
+  .inp-icon1{
+    background: url(https://img.icons8.com/material-outlined/24/000000/find-email.png)no-repeat scroll 18px 7px;
+    background-size: 16px;
+    padding-left: 60px;
+  }
+  .call{
+      border: black 1px solid !important;
+      height: 40rem !important;
+      width: 30rem !important;
+      padding-top: 5rem !important;
+  }
+  input[type="text"]{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 1rem !important;
+    margin: 0rem !important;
+}
+input[type="text"]:focus{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+} 
+.bigger{
+    
+}
+  /* end logi page */

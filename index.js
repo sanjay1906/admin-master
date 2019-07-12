@@ -7,6 +7,10 @@ const mongoose = require('mongoose');
 // Importing Routers
 const homeRouter = require('./routers/homeRouter');
 const servicesRouter = require('./routers/servicesRouter');
+const loginRouter = require('./routers/loginRouter');
+const userRouter = require('./routers/userRouter');
+
+
 
 // Database Connection
 const databaseUrl = "mongodb://admin:admin123@ds127938.mlab.com:27938/doctorai_admin";
@@ -39,6 +43,10 @@ app.use('/static',express.static(__dirname + '/public'))
 // Routers
 app.use("/",homeRouter);
 app.use('/services',servicesRouter)
+app.use("/login",loginRouter);
+app.use("/user",userRouter);
+
+
 
 // Page Not Found
 app.use((req,res,next)=>{
